@@ -1,0 +1,11 @@
+create table j12_feedback(fid bigint(6) not null auto_increment primary key, name varchar(128) not null, emailid varchar(256), timestamp datetime not null, message varchar(900) not null);
+
+create table j12_alumni(aid bigint(10) not null auto_increment primary key, name varchar(256) not null, collegenick varchar(128), yearofpassout varchar(5) not null, department varchar(4) not null, company varchar(256), address varchar(1024) not null, phone varchar(16) not null, emailid varchar(256) not null, attendingstatus varchar(6) not null );
+
+create table j12_general(attribname varchar(64) not null, attribvalue varchar(64) not null);
+
+create table j12_bandblast(bid int(2) not null auto_increment primary key, bandname varchar(256) not null, placefrom varchar(128),members varchar(2) not null, contactname varchar(256),  phone varchar(16) not null);
+
+create table j12_rjhunt(rjid int(3) not null auto_increment primary key, name varchar(256) not null, phone varchar(16) not null);
+
+create table j12_updates(upid int(3) not null auto_increment primary key, updatevalue varchar(5000) not null);
